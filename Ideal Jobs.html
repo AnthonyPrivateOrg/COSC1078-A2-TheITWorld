@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Ideal Jobs?</title>
+		<title>Ideal Jobs</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="Ideal Jobs.html">Ideal Jobs?</a></h1>
+						<h1><a href="Ideal Jobs.html">Ideal Jobs</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -27,7 +27,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="Ideal Jobs.html">Ideal Jobs?</a></li>
+											<li><a href="Ideal Jobs.html">Ideal Jobs</a></li>
 											<li><a href="Tools.html">Tools</a></li>
 											<li><a href="Industry Data.html">Industry Data</a></li>
 											<li><a href="IT Work.html">IT Work</a></li>
@@ -50,14 +50,75 @@
 						<header>
 							<h2>Our Ideal Jobs</h2>
 						</header>
+							<style>
+							.collapsible {
+							  background-color: #8a8cbf;
+							  color: black;
+							  cursor: pointer;
+							  padding: 1px;
+							  width: 100%;
+							  border: none;
+							  text-align: center;
+							  outline: none;
+							  font-size: 15px;
+							}
+
+							.active, .collapsible:hover {
+							  background-color: #7476ab;
+							}
+
+							.content {
+							  padding: 0 18px;
+							  display: none;
+							  overflow: hidden;
+							  background-color: #edeeff;
+							}
+							img {
+							    max-width: 100%;
+							    max-height: 100%;
+							}
+							.center {
+								display: block;
+								margin-left: auto;
+								margin-right: auto;
+							}
+						</style>
 						<section class="wrapper style5">
 							<div class="inner">
-
-
-
+								<h2>Comparison</h2>
+								<img src="images/Ideal Jobs/table.png" alt="Comparison" class="center">
+								<p>All our ideal jobs extend into the IT industry, which makes sense given that we are all studying this subject. In the IT industry itself, however, some of our jobs differ vastly, as the IT industry is a very big one and has vacancies for all sorts of different jobs. Our ideal jobs vary from engineers to UX designers, from system analysts to security specialists. Everyone, except for Victor, is required to complete an IT course to get their desired jobs and that’s the only thing we all have in common. In the IT industry there are countless different certifications, programming languages and skills that could be required. Some of us are required to code in different languages, others require specific certifications, while some would need existing work experience in the sphere.</p>
+								<p>Some of our existing skills, however, do match. That’s mostly about being able to code and our work ethics. That doesn’t come as a surprise as so far we haven’t been studying vastly different subjects. Most of us just came out of high school and just started this course, so it makes sense for us to have common existing skills. We do also have hobbies though that we learnt a lot from: from understanding of DBMS’s to working with Raspberry Pi’s.</p>
+								<p>Overall, we’re alike and different at the same time, but that’s most people in the IT industry. We are all currently learning the same things, we have a lot in common when it comes to things we’ve learnt in the past, but we are all putting more effort towards different aspects of this course and our IT interest as a whole. A lot of the same base knowledge is often required, however, more often than not, a lot of work specific knowledge is also necessary to get a position in the industry.</p>
+								<h2>Job Advertisments</h2>
+								<button type="button" class="collapsible">Anthony Nguyen</button>
+								<div class="content">
+									<img src="images/Ideal Jobs/anthony1.png" alt="Advertisment Part 1">
+									<img src="images/Ideal Jobs/anthony2.jpg" alt="Advertisment Part 2">
+								</div>
+								<br>
+								<button type="button" class="collapsible">George Stergiadis</button>
+								<div class="content">
+									<img src="images/Ideal Jobs/george.jpg" alt="Advertisment">
+								</div>
+								<br>
+								<button type="button" class="collapsible">Artem Potemkin</button>
+								<div class="content">
+									<img src="images/Ideal Jobs/artem.jpg" alt="Advertisment">
+								</div>
+								<br>
+								<button type="button" class="collapsible">Victor Heather</button>
+								<div class="content">
+									<img src="images/Ideal Jobs/victor.png" alt="Advertisment">
+								</div>
+								<br>
+								<button type="button" class="collapsible">Sahil Mann</button>
+								<div class="content">
+									<img src="images/Ideal Jobs/sahil1.png" alt="Advertisment Part 1">
+									<img src="images/Ideal Jobs/sahil2.png" alt="Advertisment Part 2">
+								</div>
 							</div>
 						</section>
-					</article>
 
 				<!-- Footer -->
 				<footer id="footer">
@@ -85,6 +146,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+	  var coll = document.getElementsByClassName("collapsible");
+	  var i;
+
+	  for (i = 0; i < coll.length; i++) {
+	    coll[i].addEventListener("click", function() {
+	      this.classList.toggle("active");
+	      var content = this.nextElementSibling;
+	      if (content.style.display === "block") {
+	        content.style.display = "none";
+	      } else {
+	        content.style.display = "block";
+	      }
+	    });
+	  }
+	  </script>
 
 	</body>
 </html>
