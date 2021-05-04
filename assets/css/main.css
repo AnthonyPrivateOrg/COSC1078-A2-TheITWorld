@@ -232,6 +232,14 @@ input, select, textarea {
 	}
 
 	hr {
+		color: #373837;
+		background-color: #373837;
+		height: 4px;
+		width: 100%;
+		border-style: dotted;
+	
+	}
+	hr {
 		border: 0;
 		border-bottom: solid 2px #fff;
 		margin: 3em 0;
