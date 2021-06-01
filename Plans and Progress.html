@@ -56,7 +56,54 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-								<!--  -->
+								<h3>Initial Thoughts and Progress</h3>
+								<p>
+									Our initial idea of how to make our project idea a reality was to develop a mobile app and a miniature, to simulate and demonstrate how our idea would work in the real work. The mobile app would only be a prototype, using an online prototyping tool such as Figma and Proto.io, where it would demonstrate how the actual app would function. The app would let users see which parking lots were available in nearby parking spaces. Users would be able to select any one of these available slots and making a booking for a certain date and time. This mobile app would be linked, in the real world, to the vehicle detection system, where the system would indicate using lights on the status of a parking spot. The lights would either indicate that the parking slot was available or not available. Our idea for the miniature, was that it would simulate the sensor of the real world. The sensor would indicate to the sensor whether a vehicle was in the slot or not and would then proceed to light up a coloured light, showing that the slot was unavailable.
+								</p>
+								<p>
+									Based off of this initial idea developed by Victor during assignment 1, and the groups discussion of how to create this idea in assignment 2, the group proceeded to write up the report and develop the artefacts in our first weeks (i.e. Weeks 9 and 10) of working on assignment 3. As a group we had set a couple of deadlines for both the artefacts and the report itself, where both would need to be completed by the end of week 11 or the start of week 12. The report would contain details on things such as our roles in developing the project, our overview of the project idea, and more detailed information on the artefacts. As we as a group, continued to work on the project report and artefact, we had encountered many issues, or dead-ends, as well as developed new ideas and made changes to the artefact development.
+								</p>
+								<h3>First Steps</h3>
+								<p>
+									In the first weeks of working of the project, we had encountered our first issue, which was members not posting their work on time for the report. It was important that members followed the deadlines, however, they were not met and a reminder to the team had to be made as it was important that both the artefact and the report was completed to the groups standard, even though more emphasis was put on the artefact. In terms of the artefact development, in particular the miniature, George had made a start on the system.
+								</p>
+								<h3>Artefact 1 and its Beginning</h3>
+								<p>
+									In terms of the mobile app prototype, not a lot of progress was made in developing the app as of yet, as Anthony and Victor need time to learn how to use Figma or Proto.io and decide which of the online tools to use. In the end it was decided that Figma would be used. The reasoning for this was because, although Proto.io has a bit more functionality to it, it required a premium membership to utilise those features for an extended period of time. Whilst Figma had all the functionality we needed and not requiring a membership.
+								</p>
+								<h3>Coming Along Smoothly</h3>
+								<p>
+									Within the first week, changes were made to the initial miniature idea. Victor and George had discussed the potential of using different coloured lights to indicate the availability of a parking slot, rather than one singular light to represent both. In our original idea, as stated above, the miniature would only have one light to indicate the availability of the slot, on meaning available, off meaning unavailable. However, with the changes introduced, it would have two difference coloured lights, green and red, to indicate the availability. When the green light is on while the red light is off, then the slot is available; if the green light is off and the red light is on, then the slot is unavailable.
+								</p>
+								<h3>Artefact 2 and its Beginning</h3>
+								<p>
+									First off, George refreshed himself on how to make a light dependent resistor work with the Arduino and just how to connect it. The idea was to connect two LEDs which are red and green where green signals an empty spot and red an occupied one. The parts were connected to a breadboard and Arduino board. A code was then designed in the Arduino IDE that would convert the resistance the LDR was changing into a value that can be changed to determine the light level needed for the lights to change. An if else statement was used which pretty much said that if the value of the light was less than 400 (as was tested), then the green light would be on, else, the red light will be on. All this testing went quite smoothly. 
+								</p>
+								<p>
+									Then it was decided that using normal jumper cables that bend and create loops above the breadboard was going to be a bad idea as the floor that will later be installed above the system to cover it up and have the LDR poke through was going to squash and bend the wires possibly knocking them out of place. Instead, solid core wire was bought that can be bent into a sort of U shape that would fit snuggly on the board. In this case, as it was only a miniature, the “vehicle” was only a small object larger enough to obstruct the light from the sensor. This was considered as good progress from the group’s point of view. 
+								</p>
+								<h3>Next Steps</h3>
+								<p>
+									By the second week most of the report sections were getting completed and slowly we were getting things done. We had our miniature parking area completed for the most part with the addition of some features to it, such as functioning LEDS to indicate the availability of the parking slot, as well as a corresponding sensor to turn on and off the LED when needed. In terms of the prototype mobile app, both the login screen and the register screens had been designed and developed. Some of the issues that caused a delay in the completion of the project was mainly relating to the report, as some members were not posting their work on time. During this week the majority of members already knew what they needed to do and were working on their assigned sections. Most of the members were working on the report sections, whilst George, Anthony, and Victor were in charge of developing the artefacts. By this point in time, the team was on track in terms of artefact development, but in terms of the report, they were behind the planned schedule.
+								</p>
+								<h3>Completion and Troubles</h3>
+								<p>
+									In the third, and the initial final week, of working on the assignment, the group ran into some unexpected events. One of our members had experienced a tragic event within their family life, and in response to that, the group had decided to reorganise the distribution of work to allow for our member to take some personal time off from the project. As such, we had discussed the possibility of an extension, and was granted an extra week (five days to be exact). Although the group was granted an extension, we had decided to still try and finish all the work roughly by the original due date, as to not drag out the work too long.
+								</p>
+								<p>
+									Within this week (I.e., the third week), the group had a fully functioning miniature. It could sense the light levels, switching between the green and red LED based on the availability of the parking slot. This was also partially replicated for 2 other car spots but are mainly static systems as their sole purpose was to assist in explaining and demonstrating the key path scenario for the application. As the group had made more progress than expected, we had decided to automate the bollard system, instead of manually lifting it and retracting it. This was done to add another layer of reliability and effectiveness to show viewers that the system was robust and could address and account certain potential problems. Although we had planned to implement this new feature, it would be put at a low priority. 
+								</p>
+								<p>
+									Likewise, we had a full prototype of the application completed as well. While Victor worked on the design and layout of the application, Anthony worked on the functionality and connecting the app. It ended up better than expected, having an account and notifications screen, the function of booking and viewing current bookings, as well as additional functions and features. In totality, the app exemplified in demonstrating how a potential fully functional application could work. It was also considered to have dropdown menus for the user inputs but, to keep it simple and straightforward (to follow the key path scenario we proposed) this would be disregarded for the moment as it was also low priority.
+								</p>
+								<p>
+									This was because the progress with the report was not what we had expected. Only two thirds of the report content had been completed, even though it was supposed to be completed by the face-to-face meeting. Most sections of the report have been completed and reviewed, however, there was still sections that needed to be completed, as well as some sections that needed to be redone.
+								</p>
+								<h3>Final Stretch and SUBMITTED</h3>
+								<p>
+									The team made a last push to reach the final stretch of submission as members had to help edit and change sections of other members to ensure the report flowed and the quality was met. The report had been finished along with the website. Both turned out well and conveyed the idea Pie9 had conceptualised. The artefacts assisted in conveying the project idea and how our system would benefit society if it were implemented in a realistic environment.
+								</p>
+								
 							</div>
 						</section>
 					</article>
